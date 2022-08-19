@@ -16,7 +16,7 @@ LOCAL_SHARED_LIBRARIES := \
     libbinder_ndk \
     libhardware \
     liblog \
-    android.hardware.light-V1-ndk_platform
+    android.hardware.light-V1-ndk
 
 LOCAL_STATIC_LIBRARIES := \
     libbase
