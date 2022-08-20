@@ -175,6 +175,7 @@ TARGET_BOARD_PLATFORM := mt6893
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/config/prop/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/prop/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
