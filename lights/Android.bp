@@ -23,7 +23,7 @@ cc_binary {
         "android.hardware.light-V1-ndk",
     ],
     srcs: [
-        "Light.cpp",
+        "Lights.cpp",
         "main.cpp",
     ],
 } 
