@@ -92,3 +92,6 @@ persist.vendor.night.charge=true
 #For Test Factory Whether Calibrated
 #ACC/GYRO/ALS/PS/ALS_DARK/LUX_B/SAR/SAR_SECONDARY/...MAX_NUM=15
 persist.vendor.sensor.cali_sensor=111001100000000
+
+# gralloc4 log
+persist.log.tag.gralloc4=S
