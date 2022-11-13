@@ -20,3 +20,12 @@ ifeq ($(TARGET_DEVICE),chopin)
 subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
 $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 endif
+
+include $(CLEAR_VARS)
+
+LIGHT_REPLACEMENT += $(TARGET_OUT_PRODUCT)/vendor_overlay/${PRODUCT_TARGET_VNDK_VERSION}/bin/hw/android.hardware.lights-service.mediatek
+$(LIGHT_REPLACEMENT): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -s /system/bin/hw/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(LIGHT_REPLACEMENT)
