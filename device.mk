@@ -40,7 +40,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 
 # VNDK
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_TARGET_VNDK_VERSION := 31
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
@@ -122,8 +122,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_PACKAGES += \
-    ImsService \
-    ImsServiceBase \
     libshim_vtservice
 
 PRODUCT_COPY_FILES += \
@@ -176,8 +174,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     FrameworkResOverlayChopin \
     WifiResOverlayChopin \
-    SystemUIOverlayChopin \
-    TelephonyOverlayChopin
+    SystemUIOverlayChopin
 
 # Power Perf
 PRODUCT_COPY_FILES += \
