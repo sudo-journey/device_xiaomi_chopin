@@ -9,6 +9,9 @@ ro.vendor.net.enable_dual_wifi=1
 # prop for cabc
 ro.vendor.cabc.enable=true
 
+# Bluetooth
+persist.bluetooth.bluetooth_audio_hal.disabled=true
+
 # Blur
 ro.surface_flinger.supports_background_blur=1
 
@@ -19,10 +22,8 @@ ro.launcher.blur.appLaunch=1
 # 5g capability(0: not support 1:nsa 2:sa 3: 1+2)
 ro.vendor.radio.5g=3
 
-#Telephony features controller
-#value: 0000 0010
+#RIL
 ro.vendor.radio.features_common=2
-
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
@@ -46,15 +47,17 @@ mediatek.wlan.ctia=0
 wifi.tethering.interface=ap0
 wifi.direct.interface=p2p0
 
-# USB MTP
+# USB
 ro.sys.usb.mtp.whql.enable=0
 ro.sys.usb.storage.type=mtp
-
-# USB BICR function
 ro.sys.usb.bicr=no
-
-# USB Charge only function
 ro.sys.usb.charging.only=yes
+
+# VoLTE
+persist.dbg.allow_ims_off=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # audio
 ro.camera.sound.forced=0

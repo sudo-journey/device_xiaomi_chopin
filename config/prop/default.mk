@@ -11,13 +11,4 @@ endif
 # ro.bluetooth.a2dp_offload.supported=false
 # ro.vendor.mtk.bt_bleaudio_enable=false 
 # vendor.audio.feature.a2dp_offload.enable=false
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.bluetooth.a2dp_offload.disabled=true \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true
-    
-
-# IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
+# PRODUCT_PRODUCT_PROPERTIES +=
