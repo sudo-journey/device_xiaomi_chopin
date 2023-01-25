@@ -16,13 +16,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_chopin.mk \
-    $(LOCAL_DIR)/aosp_choping.mk
+    $(LOCAL_DIR)/omni_chopin.mk \
+    $(LOCAL_DIR)/omni_choping.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_chopin-user \
-    aosp_chopin-userdebug \
-    aosp_chopin-eng \
-    aosp_choping-user \
-    aosp_choping-userdebug \
-    aosp_choping-eng
+    omni_chopin-user \
+    omni_chopin-userdebug \
+    omni_chopin-eng \
+    omni_choping-user \
+    omni_choping-userdebug \
+    omni_choping-eng

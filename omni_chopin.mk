@@ -17,20 +17,24 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/chopin/device.mk)
 
-# Inherit some common Pixel-Experience stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common OmniROM stuff.
+$(call inherit-product, vendor/omni/config/phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := choping
-PRODUCT_NAME := aosp_choping
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := 21061110AG
+PRODUCT_DEVICE := chopin
+PRODUCT_NAME := omni_chopin
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := M2104K10AC
 PRODUCT_MANUFACTURER := Xiaomi
+TARGET_BOOTANIMATION_SIZE := 1080p
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
